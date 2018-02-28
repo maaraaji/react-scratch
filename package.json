@@ -1,0 +1,11 @@
+{
+  "name": "myapp",
+  "version": "1.0.0",
+  "description": "\"A react js training application'",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "author": "maaraa",
+  "license": "ISC"
+}
