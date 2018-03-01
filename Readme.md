@@ -1,6 +1,6 @@
 1. do npm init
 
-2. install babel and babel-cli globally
+2. install babel and babel-cli globally. Babel is the compiler to compile the ES6 code to ES5.
     > `npm install -g babel babel-cli`
 
 3. install webpack and webpac-dev-server as dedency or local modules
