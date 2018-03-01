@@ -86,3 +86,28 @@
     export default Contacts;
     ```
 
+9. Component Life Cycle methods. We should be ware of methods that will be triggered for below scenarios,
+
+    Initial Render
+        getDefaultProps
+        getInitialState
+        componentWillMount
+        render
+        componentDidMount
+    Props Change
+        componentWillReceiveProps
+        shouldComponentUpdate
+        componentWillUpdate
+        render
+        componentDidUpdate
+    State Change
+        shouldComponentUpdate
+        componentWillUpdate
+        render
+        componentDidUpdate
+    Component Unmount
+        componentWillUnmount
+
+    ![ComponentLifeCycle](ComponentLifecycle.png)
+
+10. 
