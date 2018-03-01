@@ -1,7 +1,9 @@
+const path = require('path');
+console.log(path.resolve(__dirname));
 var config = {
-    entry: './main.js',
+    entry: './src/main.js',
     output: {
-        path: './',
+        path: path.resolve(__dirname),
         filename: 'index.js'
     },
     devServer: {
@@ -13,7 +15,7 @@ var config = {
             {
                 test: /\.jsx?$/,
                 exclude: /node_modules/,
-                loader: 'babel',
+                loader: 'babel-loader',
                 query: {
                     presets: ['es2015', 'react']
                 }
@@ -21,3 +23,5 @@ var config = {
         ]
     }
 }
+
+module.exports = config;
