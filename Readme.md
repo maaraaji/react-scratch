@@ -34,3 +34,52 @@
         b. port
     d. modules
         a. loaders
+
+8. Components
+    Stateless
+    Statefull
+
+    // Create a component named MessageComponent
+```javascript
+var MessageComponent = React.createClass({
+render: function() {
+    return (
+    <div><h1> Hello World</h1></div>
+    );
+}
+});
+// Render an instance of MessageComponent into document.body
+ReactDOM.render(
+<MessageComponent/>, document.body
+);```
+
+#### Components can be created in two ways
+    *React.createClass*
+    ```javascript
+    import React from 'react';
+    const Contacts = React.createClass({
+        render() {
+            return (
+                <div></div>
+            )
+        }
+    })
+    
+    export default contacts```
+
+    *React.Component*
+    ```javascript
+    import React from 'react';
+    class Contacts extends React.Component {
+        constructor(props){
+            super(props);
+        }
+        render () {
+            return (
+                <div></div>
+            );
+        }
+    }
+
+    export default Contacts;```
+
