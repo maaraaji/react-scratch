@@ -40,20 +40,21 @@
     Statefull
 
     // Create a component named MessageComponent
-```javascript
-var MessageComponent = React.createClass({
-render: function() {
-    return (
-    <div><h1> Hello World</h1></div>
+    ```javascript
+    var MessageComponent = React.createClass({
+    render: function() {
+        return (
+        <div><h1> Hello World</h1></div>
+        );
+    }
+    });
+    // Render an instance of MessageComponent into document.body
+    ReactDOM.render(
+    <MessageComponent/>, document.body
     );
-}
-});
-// Render an instance of MessageComponent into document.body
-ReactDOM.render(
-<MessageComponent/>, document.body
-);```
+    ```
 
-#### Components can be created in two ways
+    #### Components can be created in two ways
     *React.createClass*
     ```javascript
     import React from 'react';
@@ -64,8 +65,9 @@ ReactDOM.render(
             )
         }
     })
-    
-    export default contacts```
+
+    export default contacts
+    ```
 
     *React.Component*
     ```javascript
@@ -81,5 +83,6 @@ ReactDOM.render(
         }
     }
 
-    export default Contacts;```
+    export default Contacts;
+    ```
 
